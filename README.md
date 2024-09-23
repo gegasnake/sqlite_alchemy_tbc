@@ -9,8 +9,6 @@ This project demonstrates how to create and manipulate an SQLite database using 
 3. [Installation](#installation)
 4. [Usage](#usage)
 5. [Features](#features)
-6. [Queries](#queries)
-7. [License](#license)
 
 ## Requirements
 
@@ -67,14 +65,13 @@ The many-to-many relationship between authors and books is represented using an 
 After running the script, the SQLite database books_authors.db will be created, containing two tables: Author and Book, along with an association table representing the many-to-many relationship. Randomly generated data for 500 authors and 1000 books will be inserted.
 
 The script will also execute several ORM-based queries, such as:
-
+## Features
 - Finding the book with the most pages.
 - Calculating the average number of pages in books.
 - Finding the youngest author.
 - Listing authors who haven't written any books.
 - Finding the top 5 authors who have written more than 3 books.
-- Features
-Utilizes SQLAlchemy for ORM-based interaction with the SQLite database.
+- Utilizes SQLAlchemy for ORM-based interaction with the SQLite database.
 - Randomly generates 500 authors using the Faker library.
 - Randomly generates 1000 books linked to the authors via a many-to-many relationship.
 - Provides various SQLAlchemy ORM queries to analyze the data, such as retrieving the book with the most pages and listing authors without books.
